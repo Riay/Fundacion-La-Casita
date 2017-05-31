@@ -1,0 +1,27 @@
+{
+  "name": "final_proyect",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Yair Silva Mendoza <yairs.mendoza@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Riay/my_first_gitproject",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^1.11.3",
+    "nivo-lightbox": "^1.1",
+    "scrollpos-styler": "^0.6",
+    "swiper": "^3.4.0",
+    "wow": "^1.0.2",
+    "animate.css": "^3.5.2",
+    "font-awesome": "^4.7.0"
+  }
+}

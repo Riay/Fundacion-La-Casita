@@ -1,0 +1,22 @@
+{
+  "name": "final_proyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "bower install",
+    "start": "node server/app",
+    "dev": "supervisor server/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.1"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
