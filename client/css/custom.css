@@ -171,7 +171,7 @@ section {
 -------------------------------------------------- */
 
 /*Swiper*/
-.swiper-container {
+.home .swiper-container {
 	height: 100vh;
 }
 
