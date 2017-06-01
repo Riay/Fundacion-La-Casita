@@ -15,20 +15,30 @@ app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
 
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', { section :'home'})
 })
 
-app.get('/Acerca', (req, res) => {
-  res.render('About')
+app.get('/About', (req, res) => {
+  res.render('About', { section: 'about'})
 })
 
-app.get('/Historia', (req, res) => {
-  res.render('Historia')
+app.get('/History', (req, res) => {
+  res.render('History')
 })
 
-app.get('/Cursos', (req, res) => {
+app.get('/Courses', (req, res) => {
   res.render('Courses')
 })
+
+app.get('/Gallery', (req, res) => {
+  res.render('Gallery')
+})
+
+app.get('/Contact', (req, res) => {
+  res.render('Contact')
+})
+
+
 
 
 app.listen(PORT)

@@ -1,0 +1,82 @@
+extends layout
+block content
+ section.video-sec.parallax-section
+  .overlay
+  .container
+    .row
+      .col-md-12
+        h2.wow.fadeInUp(data-wow-delay='0.5s')
+          | Video
+          small
+            | Conoce nuestra gran familia.
+        a(href='#')
+          i.fa.fa-play
+        small
+          em Video by Yair Silva
+ section#gallery.gallery-sec
+  .container
+    .row
+      .col-md-12
+        .heading.text-md-center.text-xs-center
+          h2
+            small Las Imagenes crean nuestra historia
+            | Galeria Fundacion La Casita 
+      .col-md-12
+        //- iso section
+        .iso-section.text-md-center.text-xs-center(data-wow-delay='0.5')
+          ul.filter-wrapper.clearfix
+            li
+              a.selected.opc-main-bg(href='#', data-filter='*') Todas
+            li
+              a.opc-main-bg(href='#', data-filter='.london') Cursos
+            li
+              a.opc-main-bg(href='#', data-filter='.paris') Salidas
+            li
+              a.opc-main-bg(href='#', data-filter='.ny') Eventos
+            li
+              a.opc-main-bg(href='#', data-filter='.hn') Nosotros
+          //- iso box section
+          .iso-box-section.wow.fadeInUp(data-wow-delay='0.9s')
+            .iso-box-wrapper.col4-iso-box
+              .iso-box.london.paris.ny.col-md-4.col-sm-6
+                .gallery-thumb
+                  a(href='img/photo-gallery-01.jpg', data-lightbox-gallery='food-gallery')
+                    img.fluid-img(src='img/photo-gallery-01.jpg', alt='Gallery')
+                    .gallery-overlay
+                      .gallery-item
+                        i.fa.fa-search
+              .iso-box.london.ny.hn.col-md-4.col-sm-6
+                .gallery-thumb
+                  a(href='img/photo-gallery-02.jpg', data-lightbox-gallery='food-gallery')
+                    img.fluid-img(src='img/photo-gallery-02.jpg', alt='Gallery')
+                    .gallery-overlay
+                      .gallery-item
+                        i.fa.fa-search
+              .iso-box.hn.col-md-4.col-sm-6
+                .gallery-thumb
+                  a(href='img/photo-gallery-03.jpg', data-lightbox-gallery='food-gallery')
+                    img.fluid-img(src='img/photo-gallery-03.jpg', alt='Gallery')
+                    .gallery-overlay
+                      .gallery-item
+                        i.fa.fa-search
+              .iso-box.london.col-md-4.col-sm-6
+                .gallery-thumb
+                  a(href='img/photo-gallery-04.jpg', data-lightbox-gallery='food-gallery')
+                    img.fluid-img(src='img/photo-gallery-04.jpg', alt='Gallery')
+                    .gallery-overlay
+                      .gallery-item
+                        i.fa.fa-search
+              .iso-box.ny.col-md-4.col-sm-6
+                .gallery-thumb
+                  a(href='img/photo-gallery-05.jpg', data-lightbox-gallery='food-gallery')
+                    img.fluid-img(src='img/photo-gallery-05.jpg', alt='Gallery')
+                    .gallery-overlay
+                      .gallery-item
+                        i.fa.fa-search
+              .iso-box.paris.lunch.col-md-4.col-sm-6
+                .gallery-thumb
+                  a(href='img/photo-gallery-06.jpg', data-lightbox-gallery='food-gallery')
+                    img.fluid-img(src='img/photo-gallery-06.jpg', alt='Gallery')
+                    .gallery-overlay
+                      .gallery-item
+                        i.fa.fa-search
