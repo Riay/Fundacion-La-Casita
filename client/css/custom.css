@@ -351,7 +351,7 @@ background: url('../img/para-01.jpg') no-repeat center center;
 }
 /*-------------- Video section  --------------*/
 .video-sec {
-	background: url('../img/video-bg.jpg') 50% 0 repeat-y fixed;
+	background: url('../img/video.jpg') 50% 0 repeat-y fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
@@ -698,7 +698,7 @@ background: url('../img/para-01.jpg') no-repeat center center;
 /* CONTACT SECTION
 -------------------------------------------------- */
 .contact-sec {
-	background: url(../img/contact-bg.jpg) no-repeat 0 bottom;
+	background: url(../img/21.jpg) no-repeat 0 bottom;
 	background-size: cover;
 }
 .contact-sec h2 {
