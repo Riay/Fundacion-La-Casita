@@ -38,3 +38,21 @@
 
 }
 
+.container.log{
+	background: #0C242E;
+	color: red;
+}
+.row.main {
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.log{
+
+	background:black;
+
+}
+
+

@@ -38,6 +38,11 @@ app.get('/Contact', (req, res) => {
   res.render('Contact')
 })
 
+app.get('/appointments', (req, res) => {
+  res.render('Log')
+})
+
+
 
 
 

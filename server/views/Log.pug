@@ -1,0 +1,31 @@
+extends layout
+block content
+    section.log
+    .container
+      .row.main
+        .main-login.main-center
+          h5 Agenda tu cita
+          form(method='post', action='#')
+            .form-group
+              label.cols-sm-2.control-label(for='name') Tu nombre
+              .cols-sm-10
+                .input-group
+                  span.input-group-addon
+                    i.fa.fa-user.fa(aria='true')
+                  input#name.form-control(type='text', name='name', placeholder='Ingresa tu Nombre')
+            .form-group
+              label.cols-sm-2.control-label(for='email') Tu Correo Electronico
+              .cols-sm-10
+                .input-group
+                  span.input-group-addon
+                    i.fa.fa-envelope.fa(aria-hidden='true')
+                  input#email.form-control(type='text', name='email', placeholder='Ingresa tu Correo Electronico')
+            .form-group
+              label.cols-sm-2.control-label(for='password') Contraseña
+              .cols-sm-10
+                .input-group
+                  span.input-group-addon
+                    i.fa.fa-lock.fa-lg(aria-hidden='true')
+                  input#password.form-control(type='password', name='password', placeholder='Ingresa tu Contraseña')
+            .form-group
+              a#button.btn.btn-primary.btn-lg.btn-block.login-button(href="#myModal", data-toggle='modal', data-target="#myModal",type='button') Registrar cita 

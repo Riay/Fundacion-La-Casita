@@ -138,7 +138,8 @@ section {
 	color: #000;
 }
 .top-bar a.navbar-brand span {
-	color: #0297ff;
+	color: green;
+	/* #0297ff color original*/
 }
 .top-bar .nav-link {
 	color: #fff;
@@ -148,7 +149,7 @@ section {
     margin-left: 20px;
 }
 .sps--blw.top-bar .nav-link {
-	color: #000
+	color: #000;
 }
 .top-bar .navbar-nav .nav-item {
 	margin: 0
