@@ -1,0 +1,18 @@
+extends layout
+block content
+  section.Admin
+    .container
+      .row.colored
+        #contentdiv.contcustom
+          span.fa.fa-spinner.bigicon
+          h2 Login
+          div
+            input#username(type='text', placeholder='username', onkeypress='check_values();')
+            input#password(type='password', placeholder='password', onkeypress='check_values();')
+            button#button1.btn.btn-default.wide.hidden(href='/')
+              span.fa.fa-check.med
+            span#lock1.fa.fa-lock.medhidden.redborder
+          div
+            br
+            p
+

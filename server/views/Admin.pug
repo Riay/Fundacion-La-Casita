@@ -1,0 +1,76 @@
+extends layout
+block content
+ section.Admin
+      .swiper-container.Admin
+        .container
+          link(rel='stylesheet prefetch', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
+          .mail-box
+            aside.sm-side
+              .user-head
+                a.inbox-avatar(href='javascript:;')
+                  img(width='64', hieght='60', src='img/c2.png')
+                .user-name
+                  h5
+                    a(href='#') Admin Name
+                  span
+                    a(href='#') Info.Ali.Pci@Gmail.com
+              .inbox-body
+                a.btn.btn-compose(href='/Login', title='Actualizar')
+                  | Salir 
+              ul.inbox-nav.inbox-divider
+               each quote in quotes
+                li.active #{quote.name}
+                  a(href='#')
+                    i.fa.fa-inbox
+                    |  Citas Pendientes
+                    span.label.label-danger.pull-right 2
+                li
+                  a(href='#')
+                    i.fa.fa-check-square-o
+                    |  Completadas
+                li
+                  a(href='#')
+                    i.fa.fa-trash-o
+                    |  Trash
+              .inbox-body.text-center
+                .btn-group
+                  a.btn.mini.btn-success(href='javascript:;')
+                    i.fa.fa-phone
+            aside.lg-side
+              .inbox-head
+                h3 Inbox
+              .inbox-body
+                .mail-option
+                  .btn-group
+                    a.btn.mini.tooltips(data-original-title='Refresh', data-placement='top', data-toggle='dropdown', href='#')
+                      i.fa.fa-refresh
+                table.table.table-inbox.table-hover
+                  tbody
+                    tr.unread
+                      td.inbox-small-cells
+                        input.mail-checkbox(type='checkbox')
+                      td.inbox-small-cells
+                        i.fa.fa-star
+                      td.view-message.dont-show PHPClass
+                      td.view-message Added a new class: Login Class Fast Site
+                      td.view-message.inbox-small-cells
+                        i.fa.fa-paperclip
+                      td.view-message.text-right 9:27 AM
+                    tr.unread
+                      td.inbox-small-cells
+                        input.mail-checkbox(type='checkbox')
+                      td.inbox-small-cells
+                        i.fa.fa-star
+                      td.view-message.dont-show Google Webmaster 
+                      td.view-message Improve the search presence of WebSite
+                      td.view-message.inbox-small-cells
+                      td.view-message.text-right March 15
+                    tr
+                      td.inbox-small-cells
+                        input.mail-checkbox(type='checkbox')
+                      td.inbox-small-cells
+                        i.fa.fa-star
+                      td.view-message.dont-show JW Player
+                      td.view-message Last Chance: Upgrade to Pro for 
+                      td.view-message.inbox-small-cells
+                      td.view-message.text-right March 15
