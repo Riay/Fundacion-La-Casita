@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const app = express()
 
 const routerQuotes = require('./routes/quotes')
+const routerQuote = require('./routes/quote')
 const routerBody = require('./routes/middelwares/body')
 
 if (process.env.NODE_ENV !== 'production') {
@@ -26,6 +27,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.use(routerBody)
 app.use('/quotes', routerQuotes)
+app.use('/quote', routerQuote)
 
 
 app.get('/', (req, res) => {

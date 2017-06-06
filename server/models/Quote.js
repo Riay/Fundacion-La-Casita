@@ -4,7 +4,12 @@ const Schema = mongoose.Schema
 
 const QuoteSchema = new mongoose.Schema ({
     name: {
-      type: String
+      type: String,
+      required: true
+    },
+    status: {
+       type: Boolean,
+       default: false
     },
     mail: {
        type: String
