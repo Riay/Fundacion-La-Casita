@@ -44,11 +44,12 @@ block content
                     a.btn.mini.tooltips(data-original-title='Refresh', data-placement='top', data-toggle='dropdown', href='#')
                       i.fa.fa-refresh
                 table.table.table-inbox.table-hover
+                each quote in quotes
                   tbody
                     tr.unread
                       td.inbox-small-cells
                         input.mail-checkbox(type='checkbox')
-                      td.inbox-small-cells
+                      td.inbox-small-cells #{task.name}
                         i.fa.fa-star
                       td.view-message.dont-show PHPClass
                       td.view-message Added a new class: Login Class Fast Site
