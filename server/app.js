@@ -63,7 +63,7 @@ app.get('/Admin', (req, res) => {
 })
 
 app.get('/Login', (req, res) => {
-	res.render('login')
+	res.render('Login')
 })
 
 
