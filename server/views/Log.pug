@@ -19,7 +19,21 @@ block content
                 .input-group
                   span.input-group-addon
                     i.fa.fa-envelope.fa(aria-hidden='true')
-                  input#email.form-control(type='text', name='email', placeholder='Ingresa tu Correo Electronico')
+                  input#email.form-control(type='email', name='email', placeholder='Ingresa tu Correo Electronico')
+            .form-group
+              label.cols-sm-2.control-label(for='number') Tu Numero telefonico
+              .cols-sm-10
+                .input-group
+                  span.input-group-addon
+                    i.fa.fa-phone.fa(aria-hidden='true')
+                  input.form-control(type='tel', name='number', placeholder='Ingresa tu Numero telefonico')
+            .form-group
+              label.cols-sm-2.control-label(for='comments') Agrega cualquier comentario
+              .cols-sm-10
+                .input-group
+                  span.input-group-addon
+                    i.fa.fa-commenting.fa(aria-hidden='true')
+                  input.form-control(type='text', name='comments', placeholder='Ingresa tus comentarios')
                 button.btn-danger.btn-lg.btn-primary.btn-block.btn-add Registrar cita 
             //- .form-group
             //-   label.cols-sm-2.control-label(for='date') Contraseña

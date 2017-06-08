@@ -11,7 +11,7 @@ const QuoteSchema = new mongoose.Schema ({
        type: Boolean,
        default: false
     },
-    mail: {
+    email: {
        type: String
     },
     number: {
