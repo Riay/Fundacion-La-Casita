@@ -2,11 +2,12 @@ const Quote = require('../../../models/Quote')
 
 function updateQuote (req,res) {
 	const { id } = req.params
-	const { name, email } = req.body
+	const { name, status, deletes } = req.body
 
 	const dataToUpdate = {}
 	if (name) dataToUpdate.name = name
-	if (email) dataToUpdate.email = email
+	if (status) dataToUpdate.status = status
+	if (deletes) dataToUpdate.deletes = deletes
 
 
 	Quote.findByIdAndUpdate( id,  dataToUpdate)

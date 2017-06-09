@@ -18,7 +18,7 @@ block content
               a.btn.btn-compose(href='/Login', title='Actualizar')
                 | Salir
             ul.inbox-nav.inbox-divider
-              li.active
+              li
                 a( href='/Admin')
                   i.fa.fa-inbox
                   |  Citas Pendientes
@@ -27,7 +27,7 @@ block content
                 a( href='/Completed')
                   i.fa.fa-check-square-o
                   |  Completadas
-              li
+              li.active
                 a( href='/Trash')
                   i.fa.fa-trash-o
                   |  Trash
@@ -48,22 +48,11 @@ block content
                   tbody
                     tr.unread
                       td.inbox-small-cells
-                        a(href="#myModal" data-toggle="modal" data-target="#myModal") #{quote.name}
+                        input.mail-checkbox(type='checkbox')
+                      td.inbox-small-cells(href='/') #{quote.name}
                       td.view-message #{quote.email}
-                       a.quote-done.btn.btn-success(href=`/quote/${quote.id}`)
-                        i.fa.fa-check-square-o
-                       a.quote-deletes.btn.btn-danger(href=`/quote/${quote.id}`)
+                       a.quote-undeleted.btn.btn-primary(href=`/quote/${quote.id}`)
+                        i.fa.fa-trash
+                       a.quote-undeleted.btn.btn-danger(href=`/quote/${quote.id}`)
                         i.fa.fa-trash
                       td.view-message.text-right
-                  #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                   .modal-dialog
-                      .modal-content
-                        .modal-header
-                          button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                          h4#myModalLabel.modal-title
-                            | #{quote.name} 
-                            small Yahoo!, President & CEO
-                        .modal-body
-                           p #{quote.id}
-                        .modal-footer
-                          button.btn.btn-default(type='button', data-dismiss='modal') Close

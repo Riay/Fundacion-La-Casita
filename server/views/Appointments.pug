@@ -2,10 +2,9 @@ extends layout
 block content
     section.log
     .container
-      .row.main
         .main-login.main-center
           h5 Agenda tu cita
-          form(action='/Quotes', method='POST', name='quotes_Form')
+          form(action='/Quotes', method='POST', name='quotes_Form', id="quotes_Form")
             .form-group
               label.cols-sm-2.control-label(for='name') Tu nombre
               .cols-sm-10
@@ -34,11 +33,13 @@ block content
                   span.input-group-addon
                     i.fa.fa-commenting.fa(aria-hidden='true')
                   input.form-control(type='text', name='comments', placeholder='Ingresa tus comentarios')
-                button.btn-danger.btn-lg.btn-primary.btn-block.btn-add Registrar cita 
-            //- .form-group
-            //-   label.cols-sm-2.control-label(for='date') Contraseña
-            //-   .cols-sm-10
-            //-     .input-group
-            //-       span.input-group-addon
-            //-         i.fa.fa-lock.fa-lg(aria-hidden='true')
-            //-       input#password.form-control(type='number', name='password', placeholder='Ingresa tu Contraseña')
+          table.modal-types
+            tbody
+              tr
+                td
+                  .swal2-icon.swal2-success.hidden
+                    span.line.tip.animate-success-tip
+                    span.line.long.animate-success-long
+                    .placeholder
+                td
+                  button.type-success(type="submit" formmethod="post") Agenda tu cita!

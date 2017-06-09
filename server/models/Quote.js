@@ -11,6 +11,10 @@ const QuoteSchema = new mongoose.Schema ({
        type: Boolean,
        default: false
     },
+    deletes: {
+       type: Boolean,
+       default: false
+    },
     email: {
        type: String
     },

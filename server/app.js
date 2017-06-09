@@ -38,9 +38,6 @@ app.get('/About', (req, res) => {
   res.render('About', { section: 'about'})
 })
 
-app.get('/History', (req, res) => {
-  res.render('History')
-})
 
 app.get('/Courses', (req, res) => {
   res.render('Courses')
@@ -55,16 +52,42 @@ app.get('/Contact', (req, res) => {
 })
 
 app.get('/appointments', (req, res) => {
-  res.render('Log')
+  res.render('Appointments')
 })
 
-app.get('/Admin', (req, res) => {
-	res.render('Admin')
-})
+
 
 app.get('/Login', (req, res) => {
-	res.render('Login')
+  res.render('Login')
 })
+
+
+
+const Quote = require('./models/Quote.js')
+
+app.get('/admin', (req, res) => {
+  Quote.find({status: false})
+    .then(quotes => {
+  res.render('Admin', { quotes })
+})
+})
+
+
+app.get('/Completed', (req, res) => {
+  Quote.find({status: true} )
+    .then(quotes => {
+  res.render('Completed', { quotes })
+})
+})
+
+app.get('/Trash', (req, res) => {
+  Quote.find({deletes:true})
+    .then(quotes => {
+  res.render('Trash', { quotes })
+})
+})
+
+
 
 
 app.listen(PORT)
