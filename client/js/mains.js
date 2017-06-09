@@ -67,7 +67,7 @@ $('.quote-deletes').on('click', function(e) {
 		})
 })
 
-$('.quote-undelte').on('click', function(e) {
+$('.quote-undeletes').on('click', function(e) {
 	e.preventDefault();
 
 	const url = $(this).attr("href")
