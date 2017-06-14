@@ -1,3 +1,4 @@
+const path = require('path')
 const Quote = require('../../../models/Quote')
 
 function addQuote(req,res) {

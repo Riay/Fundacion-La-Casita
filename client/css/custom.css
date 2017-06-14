@@ -197,6 +197,7 @@ section {
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+	background-color: rgba(0,0,0,0.8);
 }
 .main-slider .slider-bg-position {
 	background-size: cover!important;
@@ -231,10 +232,20 @@ section {
 -------------------------------------------------- */
 
 .service-sec{
-background: url('../img/para-01.jpg') no-repeat center center;
+background: url('../img/mex.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
 	position: relative;
+}
+
+	.service-sec:before {
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0
 
 }
 .service-sec .heading {
@@ -246,11 +257,11 @@ background: url('../img/para-01.jpg') no-repeat center center;
 	display: block;
 	text-transform: capitalize;
 	font-weight: 600;
-	color: #0297FF;
+	color: white;
 	font-size: 32px;
 }
 .service-sec h2 small {
-	color: #222;
+	color: white;
 	display: block;
 	font-size: 22px;
 	margin-bottom: 18px;
@@ -280,7 +291,7 @@ background: url('../img/para-01.jpg') no-repeat center center;
 /* ABOUT SECTION
 -------------------------------------------------- */
 .about-sec {
-	background: url('../img/para-01.jpg') no-repeat center center;
+	background: url('../img/mexi.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
 	position: relative;
@@ -290,7 +301,7 @@ background: url('../img/para-01.jpg') no-repeat center center;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: rgba(22,122,192,0.8);
+	background: rgba(0,0,0,0.6);
 	top: 0;
 	left: 0
 }

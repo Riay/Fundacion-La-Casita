@@ -12,21 +12,6 @@ $('.modal-types button').on('click', function () {
     swal(type + '!', '', type).catch(swal.noop)
   })
 
-
-$('.type-success').submit('click', function(e) {
-
-
-	const url = $(this).attr("href")
-	const method = 'POST'
-	const data = $("#quotes_Form")
-	console.log(data)
-
-	$.ajax({ url, method, data })
-		.done(response => {
-			location.reload();
-		})
-})
-
 $('.quote-done').on('click', function(e) {
 	e.preventDefault();
 
@@ -80,7 +65,7 @@ $('.quote-undeletes').on('click', function(e) {
 		})
 })
 
-$('.swal2-confirm').on('click', function(e) {
+$('.type-success').on('click', function(e) {
 	e.preventDefault();
 
 	const url = $(this).attr("href")
@@ -93,3 +78,4 @@ $('.swal2-confirm').on('click', function(e) {
 			location.reload();
 		})
 })
+

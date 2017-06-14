@@ -9,6 +9,12 @@
     margin-top: 4%;
 }
 
+.img-fluid.about {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
 .scroll {
 	border: 1px solid #F4F2F2;
 	padding: 5px 10px;
@@ -77,6 +83,7 @@
 .service-sec i{
     margin-top: 10%
 }
+
 
 
 
@@ -451,7 +458,7 @@ ul {
 
 
 .Admin{
-    background: url('../img/w1.jpg') no-repeat center center;
+    background: url('../img/angel.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 
