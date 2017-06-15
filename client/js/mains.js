@@ -65,6 +65,22 @@ $('.quote-undeletes').on('click', function(e) {
 		})
 })
 
+$('.quote-indeletes').on('click', function(e) {
+	e.preventDefault()
+
+	const $thisElement = $(this)
+	const url = $thisElement.attr("href")
+	const method = 'DELETE'
+
+	$.ajax({url, method})
+		.done( response => {
+		$thisElement
+      .parents('.inbox-small-cells')
+        .remove()
+        location.reload();
+	})
+})
+
 $('.type-success').on('click', function(e) {
 	e.preventDefault();
 

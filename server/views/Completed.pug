@@ -22,15 +22,15 @@ block content
                 a( href='/Admin')
                   i.fa.fa-inbox
                   |  Citas Pendientes
-                  span.label.label-danger.pull-right 2
+                  span.label.label-danger.pull-right 
               li.active
                 a( href='/Completed')
                   i.fa.fa-check-square-o
                   |  Completadas
-              li
-                a( href='/Trash')
-                  i.fa.fa-trash-o
-                  |  Trash
+              //- li
+              //-   a( href='/Trash')
+              //-     i.fa.fa-trash-o
+              //-     |  Trash
             .inbox-body.text-center
               .btn-group
                 a.btn.mini.btn-success(href='javascript:;')
@@ -53,6 +53,6 @@ block content
                       td.view-message #{quote.email}
                        a.quote-quit.btn.btn-primary(href=`/quote/${quote.id}`)
                         i.fa.fa-check-square-o
-                       a.quote-deletes.btn.btn-danger(href=`/quote/${quote.id}`)
+                       a.quote-indeletes.btn.btn-danger(href=`/quote/${quote.id}`)
                         i.fa.fa-trash
                       td.view-message.text-right

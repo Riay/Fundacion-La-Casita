@@ -22,7 +22,7 @@ block content
                 a( href='/Admin')
                   i.fa.fa-inbox
                   |  Citas Pendientes
-                  span.label.label-danger.pull-right 2
+                  span.label.label-danger.pull-right 
               li
                 a( href='/Completed')
                   i.fa.fa-check-square-o
@@ -51,8 +51,6 @@ block content
                         input.mail-checkbox(type='checkbox')
                       td.inbox-small-cells(href='/') #{quote.name}
                       td.view-message #{quote.email}
-                       a.quote-undeletes.btn.btn-primary(href=`/quote/${quote.id}`)
-                        i.fa.fa-trash
-                       a.quote-undeletes.btn.btn-danger(href=`/quote/${quote.id}`)
+                       a.quote-indeletes.btn.btn-danger(href=`/quote/${quote.id}`)
                         i.fa.fa-trash
                       td.view-message.text-right

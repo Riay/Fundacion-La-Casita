@@ -22,18 +22,18 @@ block content
                 a( href='/Admin')
                   i.fa.fa-inbox
                   |  Citas Pendientes
-                  span.label.label-danger.pull-right 2
+                  span.label.label-danger.pull-right 
               li
                 a( href='/Completed')
                   i.fa.fa-check-square-o
                   |  Completadas
-              li
-                a( href='/Trash')
-                  i.fa.fa-trash-o
-                  |  Trash
+              //- li
+              //-   a( href='/Trash')
+              //-     i.fa.fa-trash-o
+              //-     |  Trash
             .inbox-body.text-center
               .btn-group
-                a.btn.mini.btn-success.send_message(href='whatsapp://send?text=Hola')
+                a.btn.mini.btn-success.send_message(href="intent://send/0123456789#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end")
                   i.fa.fa-phone
           aside.lg-side
             .inbox-head
@@ -52,8 +52,6 @@ block content
                       td.view-message #{quote.email}
                        a.quote-done.btn.btn-success(href=`/quote/${quote.id}`)
                         i.fa.fa-check-square-o
-                       a.quote-deletes.btn.btn-danger(href=`/quote/${quote.id}`)
-                        i.fa.fa-trash
                       td.view-message.text-right
                   #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
                    .modal-dialog
