@@ -74,7 +74,9 @@
 
 .btn-transparent-white.courses {
     border: solid #0297ff;
-    
+    display: grid;
+    width: 60%;
+    margin-left: 20%;
 }
 .swiper-container.Admin {
     margin-top: 5%;

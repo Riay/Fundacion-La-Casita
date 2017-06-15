@@ -79,3 +79,16 @@ $('.type-success').on('click', function(e) {
 		})
 })
 
+window.onload = send_whatsapp;
+
+function send_whatsapp(){
+
+  document.querySelector('.send_message').addEventListener('click',function(){
+
+    var url = "whatsapp://send?text="
+    var message = document.querySelector('#mensaje').value;
+    window.open(url+encodeURIComponent(message));
+    
+  });
+
+};

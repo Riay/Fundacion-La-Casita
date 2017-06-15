@@ -2,7 +2,7 @@ angular.module('comicApp')
 
     .config(function($routeProvider) {
         $routeProvider
-            .when('/', {
+            .when('/angular', {
                 templateUrl: 'templates/comic_search.html',
                 controller: 'searchController'
             })
