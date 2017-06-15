@@ -86,7 +86,7 @@ $('.type-success').on('click', function(e) {
 
 	const url = $(this).attr("href")
 	const method = 'POST'
-	const data = 'name' + 'email' + 'number' + 'comments'
+	const data = {}
 	console.log(data)
 
 	$.ajax({ url, method, data })
