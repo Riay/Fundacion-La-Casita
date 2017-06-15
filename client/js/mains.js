@@ -84,9 +84,16 @@ $('.quote-indeletes').on('click', function(e) {
 $('.type-success').on('click', function(e) {
 	e.preventDefault();
 
-	const url = $(this).attr("href")
+	const url = '/quotes/appointments'
 	const method = 'POST'
-	const data = {}
+
+	const name = $('[name="name"]').val()
+	const email = $('[name="email"]').val()
+	const number = $('[name="number"]').val()
+	const comments = $('[name="comments"]').val()
+
+
+	const data = { name, email, number, comments}
 	console.log(data)
 
 	$.ajax({ url, method, data })
