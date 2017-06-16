@@ -18,7 +18,7 @@
 This is my final project at the MEAN Stack [Skylabcoders Academy](http://www.skylabcoders.com/) bootcamp.
 
 
-## Installation
+##  Installation
 
 You need to have installed [NodeJS](https://nodejs.org/) with [npm](https://www.npmjs.com/) and [MongoDB](https://www.mongodb.com/)
 
@@ -32,6 +32,7 @@ All dependencies will be installed automatically
 ## Acknowledgments
 
 * [SkylabCoders](https://github.com/SkylabCoders)
+* [David Monreal](https://github.com/SkylabCoders)
 * [JuanMa Garrido](https://github.com/juanmaguitar)
 * [AlejandroDG](https://github.com/agandia9)
 
