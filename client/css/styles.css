@@ -2,6 +2,18 @@
 	height: 100%;
 }
 
+
+.container.contact{
+    background: rgba(0,0,0,0.5);
+    font-size: 24px;
+}
+
+.section.Admin {
+    overflow-y: hidden;
+
+    padding-bottom: 180px;
+}
+
 .img-fluid.icon {
     max-width: 9%;
     height: auto;

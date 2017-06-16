@@ -98,7 +98,28 @@ $('.type-success').on('click', function(e) {
 
 	$.ajax({ url, method, data })
 		.done(response => {
-			location.reload();
+		})
+})
+
+$('.btn-aqua').on('click', function(e) {
+	e.preventDefault();
+
+	const url = '/Contact'
+	const method = 'POST'
+
+	const name = $('[name="name"]').val()
+	const email = $('[name="email"]').val()
+	const number = $('[name="number"]').val()
+	const comments = $('[name="comments"]').val()
+
+
+	const data = { name, email, number, comments}
+	console.log(data)
+
+	$.ajax({ url, method, data })
+		.done(response => {
+			alert('Tu correo se ha enviado correctamente');
+			   location.reload();
 		})
 })
 

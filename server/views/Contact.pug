@@ -1,54 +1,27 @@
 extends layout
 block content
-  section#contact.contact-sec
-    .container
+  section#contact.contact-sec(style="padding-bottom: 123px")
+    .container.contact
       h2
-        | Cuentanos
+        | Cuéntanos
         small que te parece nuestro trabajo
       .row
         .col-md-4
+         form( method='POST', action='/sendMail')
           .form-group
-            label(for='exampleName') Nombre
-            input#exampleName.form-control(type='text', aria-describedby='emailHelp')
+            label(for='exampleName' ) Nombre
+            input#exampleName.form-control(name='name',type='text', aria-describedby='emailHelp')
         .col-md-4
           .form-group
-            label(for='examplePhone') Numero de Telefono
-            input#examplePhone.form-control(type='text', aria-describedby='emailHelp')
+            label(for='examplePhone' ) Numero de Telefono
+            input#examplePhone.form-control(name='number',type='text', aria-describedby='emailHelp')
         .col-md-4
           .form-group
             label(for='exampleInputEmail1') Correo Electronico
-            input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp')
-            small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+            input#exampleInputEmail1.form-control( name='email',type='email', aria-describedby='emailHelp')
+            small#emailHelp.form-text.text-muted 
         .col-md-12
-          label(for='exampleTextarea') Manda tus sugerencias
-          textarea#exampleTextarea.form-control(rows='3')
+          label(for='exampleTextarea' ) Manda tus sugerencias
+          textarea#exampleTextarea.form-control(rows='3',name='comments')
         .col-md-12.text-xs-center.action-block
-          a.btn.btn-capsul.btn-aqua(href='#') Enviar
-  footer
-    .container
-      .row
-        .col-md-2.col-sm-4
-          ul
-            li
-              a(href='#') Home
-            li
-              a(href='#') Historia
-            li
-              a(href='#') About
-        .col-md-2.col-sm-4
-          ul
-            li
-              a(href='#') Blog
-            li
-              a(href='#') Image Gallery
-            li
-              a(href='#') Contact
-      .row.copy-footer
-        .col-sm-6.col-md-3
-          | ©
-          script(type='text/javascript').
-            document.write(new Date().getFullYear());
-          |  
-        .col-sm-6.col-md-3.pull-right.text-xs-right
-          | Yair Silva
-          i.fa.fa-heart
+          button.btn.btn-capsul.btn-aqua(,type='submit' formmethod="post") Enviar

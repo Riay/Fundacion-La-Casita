@@ -8,6 +8,7 @@ const app = express()
 const routerQuotes = require('./routes/quotes')
 const routerQuote = require('./routes/quote')
 const routerBody = require('./routes/middelwares/body')
+const routerContact = require('./routes/contact')
 
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
@@ -28,6 +29,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(routerBody)
 app.use('/quotes', routerQuotes)
 app.use('/quote', routerQuote)
+app.use( routerContact )
 
 
 app.get('/', (req, res) => {

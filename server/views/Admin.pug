@@ -1,6 +1,6 @@
 extends layout
 block content
-  section.Admin
+  section.Admin(style="padding-bottom: 180px;")
     .swiper-container.Admin
       .container
         link(rel='stylesheet prefetch', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
@@ -50,6 +50,7 @@ block content
                       td.inbox-small-cells
                         a(href="#myModal" data-toggle="modal" data-target="#myModal") #{quote.name}
                       td.view-message #{quote.email}
+                      td.view-message #{quote.number}
                        a.quote-done.btn.btn-success(href=`/quote/${quote.id}`)
                         i.fa.fa-check-square-o
                       td.view-message.text-right
