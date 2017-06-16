@@ -1,4 +1,4 @@
-[![Skylab](http://www.leeloo.help/images/technology/logo_mongo.png)](http://www.skylabcoders.com/)
+
 [![MongoDB](https://github.com/Iggy-Codes/logo-images/blob/master/logos/mongodb.png)](https://www.mongodb.com/)
 [![ExpressJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/expressjs.png)](http://expressjs.com///)
 [![NodeJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
